@@ -25,10 +25,16 @@ def heap_sort(arr):
             percolate_down(start, len(arr))
             start -= 1
 
+
     heapify()
+
+    print(f"heapified list: {arr}")
+    print()
+    print("sorting:")
 
     # actual sorting
     for i in range(len(arr) - 1, 0, -1):
+        print(arr)
         arr[0], arr[i] = arr[i], arr[0]
         percolate_down(0, i)
   
